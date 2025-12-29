@@ -1,0 +1,83 @@
+:root {
+  --bg: #0b1c2d;
+  --card: #132c44;
+  --accent: #1f6feb;
+  --text: #ffffff;
+  --muted: #a9b7c6;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: #081421;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.logo {
+  height: 48px;
+}
+
+button {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+main {
+  padding: 1rem;
+}
+
+.menu h2 {
+  margin-bottom: 1rem;
+}
+
+.item {
+  background: var(--card);
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.item p {
+  color: var(--muted);
+}
+
+.checkout {
+  background: var(--card);
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 2rem;
+}
+
+input {
+  width: 100%;
+  padding: 0.7rem;
+  margin-bottom: 0.7rem;
+  border-radius: 6px;
+  border: none;
+}
+
+.hidden {
+  display: none;
+}
