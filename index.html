@@ -10,54 +10,65 @@
 
 <header class="site-header">
   <div class="brand">
-    <img
-      src="https://static.wixstatic.com/media/038e55_c6d16adb65444190a5e0e3730adc1a2d~mv2.png/v1/fill/w_400,h_360,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/038e55_c6d16adb65444190a5e0e3730adc1a2d~mv2.png"
-      alt="Bomb Burgers Logo"
-      class="logo"
-    />
+    <img src="https://static.wixstatic.com/media/038e55_c6d16adb65444190a5e0e3730adc1a2d~mv2.png/v1/fill/w_400,h_360,al_c,q_85,enc_avif/038e55_c6d16adb65444190a5e0e3730adc1a2d~mv2.png" class="logo">
     <h1>Bomb Burgers</h1>
   </div>
-
-  <button id="cartBtn">
-    Cart (<span id="cartCount">0</span>)
-  </button>
+  <button id="cartBtn">🛒 <span id="cartCount">0</span></button>
 </header>
 
 <main>
-  <section class="menu">
-    <h2>Burgers</h2>
 
-    <div class="item">
-      <h3>The All-American</h3>
-      <p>Double beef, American cheese, pickles, grilled onions</p>
-      <strong>£8.25</strong>
-      <button onclick="addToCart('All-American', 8.25)">Add to Cart</button>
-    </div>
+<section class="menu">
+<h2>Classic Burgers</h2>
 
-    <div class="item">
-      <h3>The Icon</h3>
-      <p>Double beef, cheddar, lettuce, pickles</p>
-      <strong>£9.25</strong>
-      <button onclick="addToCart('The Icon', 9.25)">Add to Cart</button>
-    </div>
+<div class="item"><h3>The All-American</h3><p>House sauce, pickles, double beef, American cheese, grilled onions</p><div class="row"><strong>£8.25</strong><button onclick="addToCart('All-American',8.25)">Add</button></div></div>
 
-    <div class="item">
-      <h3>The Firestarter</h3>
-      <p>Jalapeños, chilli sauce, American cheese</p>
-      <strong>£10.25</strong>
-      <button onclick="addToCart('Firestarter', 10.25)">Add to Cart</button>
-    </div>
-  </section>
+<div class="item"><h3>The Icon</h3><p>House sauce, pickles, lettuce, double beef, cheddar, grilled onions</p><div class="row"><strong>£9.25</strong><button onclick="addToCart('The Icon',9.25)">Add</button></div></div>
 
-  <section id="checkout" class="checkout hidden">
-    <h2>Checkout</h2>
+<div class="item"><h3>Halloumi Burger</h3><p>Sweet chilli sauce, lettuce, tomato, fried halloumi</p><div class="row"><strong>£9.25</strong><button onclick="addToCart('Halloumi Burger',9.25)">Add</button></div></div>
 
-    <input id="name" placeholder="Full Name" />
-    <input id="phone" placeholder="Phone Number" />
-    <input id="address" placeholder="Address" />
+<div class="item"><h3>Bacon Cheeseburger</h3><p>House sauce, lettuce, double beef, cheddar, crispy bacon</p><div class="row"><strong>£10.25</strong><button onclick="addToCart('Bacon Cheeseburger',10.25)">Add</button></div></div>
+</section>
 
-    <button onclick="placeOrder()">Place Order</button>
-  </section>
+<section class="menu">
+<h2>Specialty Burgers</h2>
+
+<div class="item"><h3>Brie & Bacon</h3><p>Cranberry sauce, lettuce, double beef, brie, bacon, crispy onions</p><div class="row"><strong>£12.15</strong><button onclick="addToCart('Brie & Bacon',12.15)">Add</button></div></div>
+
+<div class="item"><h3>The El Matador</h3><p>Smoky paprika mayo, rocket, double beef, cheddar, chorizo, onions</p><div class="row"><strong>£12.15</strong><button onclick="addToCart('El Matador',12.15)">Add</button></div></div>
+
+<div class="item"><h3>The Firestarter</h3><p>Chilli sauce, jalapeños, double smashed beef, American cheese</p><div class="row"><strong>£10.25</strong><button onclick="addToCart('Firestarter',10.25)">Add</button></div></div>
+</section>
+
+<section class="menu">
+<h2>Sides</h2>
+
+<div class="item"><h3>Regular Fries</h3><div class="row"><strong>£3.25</strong><button onclick="addToCart('Regular Fries',3.25)">Add</button></div></div>
+<div class="item"><h3>Large Fries</h3><div class="row"><strong>£4.25</strong><button onclick="addToCart('Large Fries',4.25)">Add</button></div></div>
+<div class="item"><h3>Regular Bomb Fries</h3><p>House seasoning</p><div class="row"><strong>£3.75</strong><button onclick="addToCart('Bomb Fries',3.75)">Add</button></div></div>
+<div class="item"><h3>Large Bomb Fries</h3><div class="row"><strong>£4.75</strong><button onclick="addToCart('Large Bomb Fries',4.75)">Add</button></div></div>
+<div class="item"><h3>Halloumi Fries</h3><p>Sweet chilli dip</p><div class="row"><strong>£6.25</strong><button onclick="addToCart('Halloumi Fries',6.25)">Add</button></div></div>
+<div class="item"><h3>Onion Rings</h3><p>BBQ dip</p><div class="row"><strong>£4.25</strong><button onclick="addToCart('Onion Rings',4.25)">Add</button></div></div>
+</section>
+
+<section class="menu">
+<h2>Drinks</h2>
+
+<div class="item"><h3>Coca-Cola</h3><div class="row"><strong>£1.70</strong><button onclick="addToCart('Coca-Cola',1.70)">Add</button></div></div>
+<div class="item"><h3>Diet Coke</h3><div class="row"><strong>£1.70</strong><button onclick="addToCart('Diet Coke',1.70)">Add</button></div></div>
+<div class="item"><h3>Dr Pepper</h3><div class="row"><strong>£1.70</strong><button onclick="addToCart('Dr Pepper',1.70)">Add</button></div></div>
+<div class="item"><h3>Irn Bru</h3><div class="row"><strong>£1.70</strong><button onclick="addToCart('Irn Bru',1.70)">Add</button></div></div>
+</section>
+
+<section id="checkout" class="checkout hidden">
+<h2>Checkout</h2>
+<input id="name" placeholder="Full Name">
+<input id="phone" placeholder="Phone Number">
+<input id="address" placeholder="Address">
+<p class="total">Total: £<span id="total">0.00</span></p>
+<button onclick="placeOrder()">Place Order</button>
+</section>
+
 </main>
 
 <script src="app.js"></script>
