@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bomb Burgers</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="brand">
+    <img
+      src="https://static.wixstatic.com/media/038e55_c6d16adb65444190a5e0e3730adc1a2d~mv2.png/v1/fill/w_400,h_360,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/038e55_c6d16adb65444190a5e0e3730adc1a2d~mv2.png"
+      alt="Bomb Burgers Logo"
+      class="logo"
+    />
+    <h1>Bomb Burgers</h1>
+  </div>
+
+  <button id="cartBtn">
+    Cart (<span id="cartCount">0</span>)
+  </button>
+</header>
+
+<main>
+  <section class="menu">
+    <h2>Burgers</h2>
+
+    <div class="item">
+      <h3>The All-American</h3>
+      <p>Double beef, American cheese, pickles, grilled onions</p>
+      <strong>£8.25</strong>
+      <button onclick="addToCart('All-American', 8.25)">Add to Cart</button>
+    </div>
+
+    <div class="item">
+      <h3>The Icon</h3>
+      <p>Double beef, cheddar, lettuce, pickles</p>
+      <strong>£9.25</strong>
+      <button onclick="addToCart('The Icon', 9.25)">Add to Cart</button>
+    </div>
+
+    <div class="item">
+      <h3>The Firestarter</h3>
+      <p>Jalapeños, chilli sauce, American cheese</p>
+      <strong>£10.25</strong>
+      <button onclick="addToCart('Firestarter', 10.25)">Add to Cart</button>
+    </div>
+  </section>
+
+  <section id="checkout" class="checkout hidden">
+    <h2>Checkout</h2>
+
+    <input id="name" placeholder="Full Name" />
+    <input id="phone" placeholder="Phone Number" />
+    <input id="address" placeholder="Address" />
+
+    <button onclick="placeOrder()">Place Order</button>
+  </section>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
